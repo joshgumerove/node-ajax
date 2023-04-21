@@ -1,0 +1,22 @@
+{
+  "name": "express-ajax",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshgumerove/node-ajax.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshgumerove/node-ajax/issues"
+  },
+  "homepage": "https://github.com/joshgumerove/node-ajax#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
