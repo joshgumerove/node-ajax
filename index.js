@@ -2,9 +2,8 @@ const express = require("express");
 // instantiate application instance
 const app = express();
 const authenticate = require("./authenticate");
-const { nextTick } = require("process");
 
-app.listen(3002, () => {
+app.listen(3012, () => {
   console.log("now listening port 3002");
 });
 
@@ -13,10 +12,9 @@ app.get("/", (req, res) => {
   res.send("Node is working");
 });
 
-app.get("/error", (req, res) => {
+app.get("/error", (req, res, next) => {
   // if redirected
   res.send("you have a mistake!");
-  next(err);
 });
 
 // middleware
