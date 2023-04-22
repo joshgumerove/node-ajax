@@ -3,8 +3,8 @@ const express = require("express");
 const app = express();
 const authenticate = require("./authenticate");
 
-app.listen(3005, () => {
-  console.log("now listening port 3005");
+app.listen(3002, () => {
+  console.log("now listening port 3002");
 });
 
 app.get("/", (req, res) => {
