@@ -33,6 +33,7 @@ function authenticate(req, res, next) {
     let err = new Error("wrong username and password combination");
     res.setHeader("WWW-Authenticate", "Basic");
     err.status = 401;
+    res.redirect("/error");
     next(err);
   }
 }
