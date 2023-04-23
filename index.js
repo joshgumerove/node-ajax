@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
   res.send("Node is working");
 });
 
-app.get("/error", (req, res, next) => {
+app.get("/error", (req, res) => {
   // if redirected
   res.send("you have a mistake!");
 });

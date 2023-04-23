@@ -34,7 +34,7 @@ function authenticate(req, res, next) {
     res.setHeader("WWW-Authenticate", "Basic");
     err.status = 401;
     res.redirect("/error");
-    next(err);
+    // next(err);
   }
 }
 
