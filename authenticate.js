@@ -30,10 +30,13 @@ function authenticate(req, res, next) {
     console.log("josh is authorized");
     next();
   } else {
-    let err = new Error("wrong username and password combination");
+    // let err = new Error("wrong username and password combination");
+    // res.setHeader("WWW-Authenticate", "Basic");
+    // err.status = 401;
+    res.statusCode = 401;
     res.setHeader("WWW-Authenticate", "Basic");
-    err.status = 401;
-    res.redirect("/error");
+    res.end("you have a mistake!");
+
     // next(err);
   }
 }
